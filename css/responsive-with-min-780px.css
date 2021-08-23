@@ -1,0 +1,680 @@
+
+@media screen and (min-width: 780px) {
+
+  /*Reset CSS*/
+  *{
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Raleway';
+  }
+
+  
+  
+  h2{
+    font-size:21px;
+  }
+  
+    /*Début Menu CSS*/
+  
+    /*Container Menu CSS*/
+    .nav--container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        width:60%;
+        background-color: white;
+        position: relative;
+        top: 0;
+        border-top: 3px solid white;
+        padding-left:2%;
+
+    }
+  
+      /*items menu*/
+    .nav--container--item{
+        list-style-type: none;
+    }
+  
+    /*Menu*/
+    .nav--container .menu{
+      right:10px;
+      position:relative;
+      align-self: center;
+      display: flex;
+    }
+  
+    /*Menu logo*/
+    .nav--container .logo{
+      left:0;
+      position:relative;
+      display: block;  
+      align-self: center;
+      left: 1%;
+      flex-grow: 3;
+    }
+  
+    /*Menu bloc*/
+    .nav--container--item--link{
+        flex: 1 1 auto;
+        position: relative;
+  
+    }
+    /*Menu liens*/
+    .nav--container--item--link a{
+      text-decoration: none;
+      align-self: center;
+      display: block;
+      width:150px;
+      text-align: center;
+      padding :59px 0;
+      border-top: 3px solid white;
+      color: #1f1f1f;
+  }
+  
+  
+  
+  /*Menu liens hover */
+  .nav--container--item--link a:hover {
+    border-top: 3px solid #0065fc;
+    color: #0065fc
+  }
+  
+  /*Menu lien active*/
+  .active a {
+    border-top: 3px solid #0065fc;
+    color: #0065fc
+  }
+  
+  .register a{
+    color: #0065fc;
+    font-weight: 800;
+  }
+  
+  /*Fin Menu CSS*/
+  
+  /*Début bloc recherche*/
+  
+  
+  .search--container
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding:1%;
+  }
+  
+  .search--container h2{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "raleway";
+  }
+  
+  .search--container p{
+    font-size: 14px;
+    font-family: "raleway";
+  }
+  
+  
+  /*Début Design bouton de recherche*/
+  
+  /*Container bouton de recherche*/
+  .button--search--container{
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width:500px;
+  }
+  
+  /*content bouton de recherche*/
+  
+  .button--search--container svg{
+    background-color:#F2F2F2;
+    fill:black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  /*svg bouton de recherche*/
+  
+  .search--svg{
+    display: block;
+    width:15px;
+    padding:2%;
+  
+  }
+  /*texte bouton de recherche*/
+  
+  .button--search--text{
+  width:140px;
+  height:32px;
+  border: 2px solid #F2F2F2;
+  font-weight: 700;
+  padding-left: 10px;
+  }
+  
+  .button--search--submit{
+    width:120px;
+    height:34px;
+    border:none;
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:white;
+    font-family: "raleway";
+    font-weight: 600;
+  }
+  /*Fin bouton de recherche*/
+  
+  
+  /*Début container des boutons filtres icones */
+  
+  .filtre-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    padding:1%;
+    width:70%;
+  }
+  
+  /*Bloc des boutons filtres icones */
+  
+  .btn-bloc{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    flex-basis: 15%;
+  }
+  
+  .btn-bloc:hover .icons svg{
+    transform: scale(1.2);
+    background-color:#0065FC;
+    border-color:#DEEBFF;
+    fill:white;
+  }
+
+  /*Design des Icones des boutons filtres */
+  
+  .icons svg{
+    width:20px!IMPORTANT;
+    height:20px;
+    background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
+    border-radius:50px;
+    padding:50%;
+    fill:#0065FC;
+    right: 0px;
+    bottom:-2px;
+    position: relative;
+    transition: all 1s ease-in;
+  }
+  
+  .icons{
+    position:relative;
+    margin-left: 80px;
+  }
+  
+  /*Content des boutons filtres */
+  
+  .btn{
+    display:flex;
+    height:40px;
+    border-top:2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-right : 2px solid #F2F2F2;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align:center;
+    font-weight: 800;
+    white-space:nowrap;
+    padding: 0 0 0 3px;
+    
+  }
+  
+  /* Titre des filtres */
+  
+  .filtre{
+    font-weight: 800;
+    flex-basis: 6%;
+  }
+  
+  /*modification position des contenus des boutons filtres */
+  
+  .btn p{
+    margin-top: 0px;
+    padding:10px;
+  }
+  
+  
+  /*Tailles des boutons filtres */
+
+  .button-animaux p{
+    width:198px;
+  
+  }
+  
+  .button-economique p{
+    width:155px;
+  }
+  
+  .button-familial p{
+    width:112px;
+  }
+  
+  .button-romantique p{
+    width:142px;
+  }
+  
+  .information{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding:1%;
+  }
+  .info{
+    color:#0065FC;
+    border: 2px solid #f2f2f2;
+    padding: 6px 12px 6px 12px;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 1%;
+  }
+  /*Fin container des boutons filtres icones */
+  /*début container hébergements / populaires */
+  
+  .container-articles{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    padding:1%;
+  }
+  /*début hébergements */
+  
+  #hebergement{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#F2F2F2;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-right:1.5%;
+    max-width: 820px;
+    padding:2%;
+  }
+    /*Titre hébergement */
+
+  .titre{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin-bottom:2%;
+    font-size: 14px;
+    margin-left: 1.5%;
+  }
+  
+    /*texte afficher plus */
+
+  .more p{
+    margin-top:3%;
+    margin-bottom:2%;
+    font-weight: bold;
+  
+  }
+
+    /* Boites hébergements */
+
+  .card{
+    display:flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background:white;
+    border-radius:10px;
+    padding:0.2%;
+    max-width:280px;
+    height:auto;
+    margin-bottom: 2%;
+    margin-right:2%;
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23); 
+    box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23);
+  }
+  
+  .header-img{
+    width:100%;
+    height:130px;
+    display:block;
+
+  }
+  
+  .header-img img{
+    width: 250px;
+    height: 130px;
+    object-fit: cover;
+    object-position: left center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .card-txt{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index:5;
+    font-family:'raleway';
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:1%;
+    line-height: 150%;
+    width:100%;
+  }
+  
+  .card-txt h2 {
+    font-size:14px;
+    font-weight: 800;
+  }
+  
+  .card-txt p {
+    font-size:14px;
+  }
+  .prix{
+    font-weight: 900;
+  }
+  
+  .notation svg{
+    width:14px;
+  }
+  
+  .stars-blank{
+    color:#F2F2F2;
+  }
+  
+  .stars-full{
+    color: #0065FC;
+  }
+  
+  
+  
+  /*Fin hébergements */
+  /*début Populaire */
+  
+  #populaire{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background:#F2F2F2;
+    justify-content: stretch;
+    align-items: center;
+    border-radius: 10px;
+    width:350px;
+    padding: 2%;
+  }
+    /*Boites populaire */
+
+  .cards-pop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding :0.3%;
+    border-radius: 10px;
+    margin-bottom:3%;
+    width: 340px;
+    height: 145px;
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23); 
+    box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23);
+  }
+  
+  .cards-pop-img{
+    height:140px;
+    width:100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .cards-pop-img img{
+    object-fit: cover;
+    width: 130px;
+    height: 140px;
+    padding:0;
+    margin:0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .cards-pop-txt{
+    flex-basis:60%;
+    padding: 2%;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    top: -30px;
+  }
+
+  .cards-pop-txt h2{
+    font-size: 14px;
+    font-weight: 800;
+  }
+  
+  .cards-pop-txt p{
+    font-size: 14px;
+  }
+
+  .cards-pop-txt .notation{
+    position: relative;
+    top:60px;
+  }
+  
+  .titre-pop{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom:6%;
+  }
+
+  .article-lien a {
+    width: 100%;
+    z-index:99;
+    display: block;
+  }
+
+    /*Début Activités */
+
+    #activite{
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width:100%;
+      flex-wrap: wrap;
+      padding:1%;
+    }
+
+    .activite-content{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-wrap: wrap;
+      width:700px;
+
+    }
+
+    .big-box-activite{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height:400px;
+      width:280px;
+      -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23); 
+      box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23);
+      margin-right:2%;
+    }
+
+    .regular-box-activite{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 196px;
+      -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23); 
+      box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23);
+      margin-right:2%;
+      margin-bottom:2%;
+    }
+
+    .medium-box-activite{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: stretch;
+      height: 241px;
+      -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23); 
+      box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23);
+      margin-right:2%;
+      margin-bottom:2%;
+
+    }
+
+    .small-box-activite{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 150px;
+      margin-bottom:2%;
+      -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23); 
+      box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.23);
+      margin-right:2%;
+    }
+
+  .b1{
+      background-image: url('/images/activites/4_small/vieuxport.jpg');
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 10px;
+    }
+
+    .b2{
+      background-image: url('/images/activites/4_small/FortPomegues.jpg');
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 10px;
+    }
+
+    .b3{
+      background-image: url('/images/activites/4_small/ileFrioul.jpg');
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 10px;
+    }
+
+    
+    .b4{
+      background-image: url('/images/activites/4_small/Calanques.jpg');
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center center;
+      background-position: center center;
+      border-radius: 10px;
+    }
+
+    .b5{
+      background-image: url('/images/activites/4_small/notredamedelagarde.jpg');
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 10px;
+    }
+
+    .b6{
+      background-image: url('/images/activites/4_small/parclongchamp.jpg');
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 10px;
+    }
+
+
+    .bloc2-activite{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      height:450px;      
+    }
+
+  
+   .activite-txt{
+      padding:1%;
+      display: flex;
+      flex-direction: column;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: block;
+      width:100%;
+      height:50px;
+      width:337px;
+      background-color:white;
+    }
+
+    .activite-txt h2{
+      font-size:14px;
+      position:relative;
+      top:35%;
+    }
+
+    .content{
+      padding:2%;
+    }
+
+/* Footer */
+
+    #footer{
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      background-color: #F2F2F2;
+      padding: 1%;
+      width:100%;
+    }
+
+    .footer-1, .footer-2, .footer-3{
+      display: flex;
+      flex-direction: column;
+      margin-right:20%;
+    }
+
+    .footer-1{
+      margin-left: 1%;
+    }
+
+    .menu-footer{
+      list-style-type: none;
+      line-height: 35px;
+    }
+.menu-footer li a {
+  text-decoration: none;
+  color:black;
+}
+    #footer .titre h2{
+      margin-bottom: 3%;
+    }
+    
+  }
+    
